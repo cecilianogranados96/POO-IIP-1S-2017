@@ -12,17 +12,16 @@ import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.xy.DefaultTableXYDataset;
 import org.jfree.data.xy.XYSeries;
-import org.mariuszgromada.math.mxparser.*;
-import java.util.Random;
 
 /**
  *
  * @author Jose
  */
 public class UI extends javax.swing.JFrame {
-    
-    Function f;
 
+    /**
+     * Creates new form UI
+     */
     public UI() {
         initComponents();
     }
@@ -139,23 +138,18 @@ public class UI extends javax.swing.JFrame {
     }//GEN-LAST:event_lbfuncionActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-        f = new Function("f(x) ="+lbfuncion.getText());
-        System.out.print("f(10) = " + f.calculate(10));
+        JFreeChart Grafica;
         
         XYSeries series1 = new XYSeries("Label uno", true, false);
-        
-        Random randomGenerator = new Random();
-        for (int idx = 1; idx <= 5; ++idx){
-          int randomInt = randomGenerator.nextInt(100);
-          series1.add(randomInt,f.calculate(randomInt));
-        }
-        JFreeChart Grafica;
-                              
+        series1.add(0.1, 25);
+        series1.add(0.2, 43);
+        series1.add(0.5, 70);
+        series1.add(0.64, 94);
+        series1.add(0.9, 112);        
         DefaultTableXYDataset dataset = new DefaultTableXYDataset();
         dataset.addSeries(series1);
         
-        Grafica = ChartFactory.createStackedXYAreaChart("Funcion", "X", "Y", dataset);
+        Grafica = ChartFactory.createStackedXYAreaChart("EJEMPLO", "XLABEL", "YLABEL", dataset);
         
         ChartPanel Panel = new ChartPanel(Grafica);
         
@@ -163,6 +157,7 @@ public class UI extends javax.swing.JFrame {
         PanelGraficar.setLayout(new java.awt.BorderLayout());
         PanelGraficar.add(Panel,BorderLayout.CENTER);
         PanelGraficar.validate();
+
        
     }//GEN-LAST:event_jButton1ActionPerformed
 
