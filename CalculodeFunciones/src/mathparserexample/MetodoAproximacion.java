@@ -13,14 +13,12 @@ public class MetodoAproximacion implements CalculoLimite{
         /*Menores que el numero*/
         for(int i=5; i>=0;i--){
             x_menor = x_menor - 0.01;
-            System.out.println(x_menor);
             arreglo[i] = f.calculate(x_menor); 
         }
         arreglo[5] = x;
         /*Mayores que el numero*/
         for(int i=6; i<arreglo.length;i++){
             x_mayor = x_mayor + 0.01;
-            System.out.println(x_mayor);
             arreglo[i] = f.calculate(x_mayor); 
         }
         /*Limite por menor (izquierda)*/
@@ -31,7 +29,8 @@ public class MetodoAproximacion implements CalculoLimite{
         for(int i=6; i<arreglo.length;i++){
             limite_mayor =  fijarNumero(arreglo[i],2); 
         }
-        System.out.println("LIMITE MENOR"+limite_menor + " LIMITE MAYOR "+limite_mayor );
+        
+        //System.out.println("LIMITE MENOR"+limite_menor + " LIMITE MAYOR "+limite_mayor );
         resultado = (limite_menor + limite_mayor) / 2;
         return resultado; 
     }

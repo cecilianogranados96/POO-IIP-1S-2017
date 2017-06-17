@@ -20,6 +20,8 @@ import org.jfree.data.xy.XYSeriesCollection;
 public class UI extends javax.swing.JFrame {
     public UI() {
         initComponents();
+        lbfuncion.setText("(x-2)/(x^2-4)");
+        lbpunto.setText("2");
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -206,12 +208,12 @@ public class UI extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String funcion = lbfuncion.getText(); 
         
-        /* EJEMPLO DE MATH*/
+        /* EJEMPLO DE MATH */
         /*
         Function f = new Function("f(x) = " + funcion);
         System.out.print("f(10) = " + f.calculate(10));
-        */        
-        
+        */   
+              
         /* IMPLEMENTACION DE LIMITES*/
         MetodoAproximacion Limite = new MetodoAproximacion();
         String resultado_Limite = Double.toString(Limite.CalcularLimiteEn(Double.parseDouble(lbpunto.getText()), funcion));
@@ -221,10 +223,6 @@ public class UI extends javax.swing.JFrame {
         MetodoDiferenciasCentrales Derivada = new MetodoDiferenciasCentrales();
         String resultado_Derivada = Double.toString(Derivada.CalcularDerivadaEn(Double.parseDouble(lbpunto.getText()), funcion));
         lbDerivada.setText(resultado_Derivada);
-        
-        /* EJEMPLOS EN CONSOLA*/
-        /* Limite = 0.25*/ 
-        System.out.println("LIMITE=" + Limite.CalcularLimiteEn(Double.parseDouble("2"), "(x-2)/(x^2-4)"));
         
         
         /*IMPLEMENTACION DEL GRAFICO DE LA FUNCION*/

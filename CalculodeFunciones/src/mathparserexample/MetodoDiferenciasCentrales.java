@@ -3,11 +3,12 @@ import org.mariuszgromada.math.mxparser.*;
 public class MetodoDiferenciasCentrales implements CalculoDerivada {
     @Override
     public double CalcularDerivadaEn(double x, String funcion) {
-        Function f = new Function("f(x) = " + funcion);
-        f.calculate(10); 
-        
-        
         double resultado = 0.0;
+        
+        Function f = new Function("der(" + funcion + ","+x+")");
+        double r = f.calculate(); 
+        System.out.println(r);
+        
         
         return resultado;   
     }
