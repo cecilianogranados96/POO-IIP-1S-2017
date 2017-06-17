@@ -4,11 +4,10 @@
  * and open the template in the editor.
  */
 package mathparserexample;
-
 /**
  *
  * @author Jose
  */
 public interface CalculoDerivada {
-    double CalcularDerivadaEn(double x);
+    double CalcularDerivadaEn(double x,String funcion);
 }

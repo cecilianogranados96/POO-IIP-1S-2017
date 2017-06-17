@@ -2,5 +2,5 @@
 package mathparserexample;
 
 public interface CalculoLimite {
-     double CalcularLimiteEn(double x);
+     double CalcularLimiteEn(double x,String funcion);
 }
