@@ -226,7 +226,8 @@ public class UI extends javax.swing.JFrame {
         
         
         /*IMPLEMENTACION DEL GRAFICO DE LA FUNCION*/
-        XYSeries series1 = new XYSeries("Label uno");
+        XYSeries series1 = new XYSeries("Función");
+
         Function f = new Function("f(x) = " + funcion);
         for (int idx = 1; idx <= 100; ++idx){
           series1.add(idx,f.calculate(idx));
@@ -234,7 +235,8 @@ public class UI extends javax.swing.JFrame {
         JFreeChart Grafica;
         XYSeriesCollection dataset = new XYSeriesCollection();
         dataset.addSeries(series1);
-        Grafica =  ChartFactory.createXYLineChart("f(x)","x","f(x)",dataset,PlotOrientation.VERTICAL,true,true,false);
+
+        Grafica =  ChartFactory.createXYLineChart("f(x) = "+funcion,"","",dataset,PlotOrientation.VERTICAL,true,true,false);
         ChartPanel Panel = new ChartPanel(Grafica);
         Panel.setMouseWheelEnabled(true);
         PanelGraficar.setLayout(new java.awt.BorderLayout());
