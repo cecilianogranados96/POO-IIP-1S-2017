@@ -23,11 +23,11 @@ public class MetodoAproximacion implements CalculoLimite{
         }
         /*Limite por menor (izquierda)*/
         for(int i=5; i>=0;i--){
-            limite_menor =  fijarNumero(arreglo[i],2);       
+            limite_menor =  fijarNumero(arreglo[i],3);       
         } 
         /*Limite por mayor (derecha)*/
         for(int i=6; i<arreglo.length;i++){
-            limite_mayor =  fijarNumero(arreglo[i],2); 
+            limite_mayor =  fijarNumero(arreglo[i],3); 
         }
         
         //System.out.println("LIMITE MENOR"+limite_menor + " LIMITE MAYOR "+limite_mayor );
