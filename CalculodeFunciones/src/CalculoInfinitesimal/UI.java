@@ -1,4 +1,6 @@
-
+/*
+ * UI: Construcción de la interfaz grafica con el usuario a todas las clases de este proyecto. 
+ */
 package CalculoInfinitesimal;
 
 import java.awt.BorderLayout;

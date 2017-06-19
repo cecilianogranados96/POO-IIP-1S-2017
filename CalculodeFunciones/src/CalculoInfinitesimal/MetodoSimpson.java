@@ -1,3 +1,6 @@
+/*
+ * MetodoDeSimpson: implementación del método de Simpson de 1/3 para integrales.
+ */
 package CalculoInfinitesimal;
 import org.mariuszgromada.math.mxparser.*;
 

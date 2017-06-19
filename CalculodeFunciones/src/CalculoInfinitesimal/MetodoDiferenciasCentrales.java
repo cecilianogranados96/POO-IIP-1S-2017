@@ -1,3 +1,6 @@
+/*
+ * MetodoDiferenciasCentrales: implementación del método de las diferencias centrales para derivadas.
+ */
 package CalculoInfinitesimal;
 import org.mariuszgromada.math.mxparser.*;
 public class MetodoDiferenciasCentrales implements CalculoDerivada {

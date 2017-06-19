@@ -1,3 +1,6 @@
+/*
+ * MetodoAproximacion: implementación del método de aproximación numérica de límites
+ */
 package CalculoInfinitesimal;
 import org.mariuszgromada.math.mxparser.*;
 public class MetodoAproximacion implements CalculoLimite{

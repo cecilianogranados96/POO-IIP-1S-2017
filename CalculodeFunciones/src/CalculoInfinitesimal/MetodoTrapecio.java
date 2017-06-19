@@ -1,4 +1,6 @@
-
+/*
+ * MetodoDelTrapecio: implementación del método del trapecio para integrales.
+ */
 package CalculoInfinitesimal;
 import org.mariuszgromada.math.mxparser.*;
 
