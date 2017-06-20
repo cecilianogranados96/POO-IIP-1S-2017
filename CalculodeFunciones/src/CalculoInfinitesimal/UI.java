@@ -28,7 +28,7 @@ public class UI extends javax.swing.JFrame {
         Image img =(new ImageIcon(getClass().getResource("/Images/calculator.png"))).getImage();        
         this.setIconImage(img); 
     }
-    
+   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -71,6 +71,8 @@ public class UI extends javax.swing.JFrame {
         jLabel1.setBounds(130, 130, 130, 15);
 
         lbfuncion.setFont(new java.awt.Font("Lucida Bright", 2, 12)); // NOI18N
+        lbfuncion.setText("Función de una variable x");
+        lbfuncion.setToolTipText("Función de una variable x");
         lbfuncion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lbfuncionActionPerformed(evt);
@@ -78,6 +80,7 @@ public class UI extends javax.swing.JFrame {
         });
         getContentPane().add(lbfuncion);
         lbfuncion.setBounds(330, 130, 210, 21);
+        lbfuncion.getAccessibleContext().setAccessibleName("");
 
         jButton1.setBackground(new java.awt.Color(102, 102, 102));
         jButton1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
@@ -199,15 +202,15 @@ public class UI extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Verdana", 1, 11)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel8.setText("Ingrese el inicio:");
+        jLabel8.setText("Ingrese el límite inferior:");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(130, 250, 130, 15);
+        jLabel8.setBounds(130, 250, 170, 15);
 
         jLabel9.setFont(new java.awt.Font("Verdana", 1, 11)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel9.setText("Ingrese el final:");
+        jLabel9.setText("Ingrese el límite superior:");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(130, 290, 120, 15);
+        jLabel9.setBounds(130, 290, 180, 15);
 
         pA.setFont(new java.awt.Font("Lucida Bright", 2, 12)); // NOI18N
         pA.addActionListener(new java.awt.event.ActionListener() {

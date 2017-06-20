@@ -60,7 +60,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Bright" size="12" style="2"/>
         </Property>
+        <Property name="text" type="java.lang.String" value="Funci&#xf3;n de una variable x"/>
+        <Property name="toolTipText" type="java.lang.String" value="Funci&#xf3;n de una variable x"/>
       </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+      </AccessibilityProperties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lbfuncionActionPerformed"/>
       </Events>
@@ -319,11 +324,11 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="33" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Ingrese el inicio:"/>
+        <Property name="text" type="java.lang.String" value="Ingrese el l&#xed;mite inferior:"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="130" y="250" width="130" height="-1"/>
+          <AbsoluteConstraints x="130" y="250" width="170" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -335,11 +340,11 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="33" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Ingrese el final:"/>
+        <Property name="text" type="java.lang.String" value="Ingrese el l&#xed;mite superior:"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="130" y="290" width="120" height="-1"/>
+          <AbsoluteConstraints x="130" y="290" width="180" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
